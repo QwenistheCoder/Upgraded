@@ -9,7 +9,7 @@
     "db:migrate": "tsx src/db/run-migrations.ts"
   },
   "dependencies": {
-    "@types/better-sqlite3": "^7.6.13",
+    "@raisk/shared": "*",
     "bcrypt": "^5.1.1",
     "better-sqlite3": "^12.8.0",
     "cors": "^2.8.5",
