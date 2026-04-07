@@ -5,6 +5,7 @@ import path from "path";
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
   return {
+    base: "/Upgraded/",
     plugins: [react()],
     resolve: {
       alias: {
