@@ -1,4 +1,5 @@
-import { v4 as uuidv4 } from "uuid";
+import crypto from "crypto";
+const uuidv4 = () => crypto.randomUUID();
 import { GameConfig, GameStateDTO, ActionDTO, GameEvent } from "@raisk/shared";
 import { GameEngine, OnStateUpdate, OnGameEnd } from "../engine/game-engine";
 import { createAgent } from "../agents/agent-factory";

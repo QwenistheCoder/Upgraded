@@ -1,6 +1,7 @@
 import Database from "better-sqlite3";
-import { v4 as uuidv4 } from "uuid";
 import crypto from "crypto";
+const uuidv4 = () => crypto.randomUUID();
+
 import { AgentConfig } from "@raisk/shared";
 
 export interface LobbyRow {
